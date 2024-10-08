@@ -6,9 +6,12 @@
 }
 
 :root {
-    --cor-de-fundo: #F5F5F5;
-    --cor-de-fundo-menu: #ffffff;
-    --cor-do-link: #000000;
+    --cor-primaria: #a53c35;
+    --cor-secundaria: #d6536d;
+    --cor-terciaria: #ffa2b6;
+    --cor-quaternaria: rgb(255, 222, 74);
+    --cor--fundo: #fff8db;
+    --cor--fundo2: #ffe065;
 }
 
 body {
@@ -19,6 +22,7 @@ body {
     padding: 0;
     line-height: 1.6;
     height: 100vh;
+    background-color: var(--cor--fundo);
 }
 
 ol, ul, li {
@@ -39,8 +43,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 6rem 0.5rem 1.2rem;    
-    background-color: var(--cor-de-fundo-menu);
+    padding: 0rem 6rem 0rem 1.2rem;    
+    background-color: var(--cor-primaria);
 }
 
 .cabecalho-logo{
@@ -54,6 +58,7 @@ a {
     font-size: 1.4rem;
     position: absolute;
     left: 16rem;
+    color: white;
     
 }
 
@@ -61,15 +66,18 @@ a {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 0.1rem;
+    align-items: center;
+    
 }
 
 .navegacao-elemento a {
     font-size: 1rem;
+    color:rgb(255, 255, 255);
 }
 .contato{
     font-weight: bolder;
-    color:rgb(139, 36, 11);
+    color: var(--cor-terciaria);
 }
 
 .navegacao-elemento a {
@@ -85,8 +93,6 @@ a {
    max-width: 90rem;
    margin-bottom: 2rem;
    margin-top: 5rem;
-   
-
 }
 
 .apresentacao-titulo{
@@ -130,9 +136,8 @@ font-size: 1.5rem;
 
 .sobre-mim{
     width:100%;
-    background-color: rgb(164, 255, 232);
-    padding: 2rem 2rem 2rem 0rem;
-    
+    padding: 2rem 2rem 0rem 0rem;    
+    background-color: var(--cor--fundo2);
 }
 
 .sobre-mim-titulo{
@@ -158,7 +163,6 @@ font-size: 1.5rem;
 /*------------------------------ Seção de Habilidades ------------------------------*/
 
 .habilidades{
-    background-color: bisque;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,8 +194,10 @@ font-size: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:2rem;
+    margin:2rem 0rem 2rem 0rem;
     padding: 3rem;
+    width:100%;
+    background-color: var(--cor--fundo2);
     
 }
 
@@ -222,8 +228,6 @@ font-size: 1.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(152, 248, 252);
-    padding: 3rem;
 }
 
 .formacao-lista{
@@ -261,6 +265,8 @@ font-size: 1.5rem;
     justify-content: center;
     align-items: center;
     padding: 3rem;
+    width:100%;
+    background-color: var(--cor--fundo2);
 }
 
 .projetos-conteiner-ingles{
@@ -304,7 +310,7 @@ font-size: 1.5rem;
 .botao-projeto {
     padding: 0.7rem 1rem;
     border: none;
-    background-color: #E3A5C7;
+    background-color: var(--cor-secundaria);
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -314,14 +320,14 @@ font-size: 1.5rem;
 }
 
 .botao-projeto:hover {
-    background-color: #b32d96;
+    background-color: #8f152d;
 }
 
 /*------------------------------ Seção de Contato ---------------------------------*/
 .contato{
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 .contato-formulario{
@@ -330,6 +336,7 @@ font-size: 1.5rem;
     gap: 2rem;
     border-radius: 1rem;
     margin-left: 2.5rem;
+    color: black;
 }
 
 .telefone-imagem{
@@ -363,7 +370,7 @@ font-size: 1.5rem;
 .contato-botao {
     padding: 0.7rem 1rem;
     border: none;
-    background-color: #007bff;
+    background-color: var(--cor-secundaria);
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -372,13 +379,13 @@ font-size: 1.5rem;
 }
 
 .contato-botao:hover {
-    background-color: #415fc2;
+    background-color: #8f152d;
 }
 
 /* ------------------------------ Footer ---------------------------------------*/
 
 .footer{
-    background-color: #e566e9;
+    background-color: var(--cor-secundaria);
     color: white;
     font-weight: bold;
     bottom:0;
