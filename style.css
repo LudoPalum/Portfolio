@@ -45,27 +45,39 @@ a {
     align-items: center;
     padding: 0rem 6rem 0rem 1.2rem;    
     background-color: var(--cor-primaria);
+    padding: 1.5rem;
+    width: 100%;
 }
 
 .cabecalho-titulo {
     font-size: 1.4rem;
-    position: absolute;
     left: 16rem;
     color: white;
     
+}
+
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .navegacao-lista {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-top: 0.1rem;
     align-items: center;
     
 }
 
+#contato{
+    font-size: 1.1rem;
+
+}
+
 .navegacao-elemento a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color:rgb(255, 255, 255);
 }
 span{
@@ -73,9 +85,6 @@ span{
     color: var(--cor-terciaria);
 }
 
-.navegacao-elemento a {
-    font-size: 1.1rem;
-}
 /* ------------------------------ Seção Apresentação ------------------------------*/
 
 .apresentacao{
@@ -214,7 +223,6 @@ font-size: 1.5rem;
 
 
 /*------------------------------ Seção de Formação Acadêmica --------------------------------*/
-/*------------------------------ Seção de Projetos --------------------------------*/
 
 .formacao{
     display: flex;
@@ -396,6 +404,7 @@ font-size: 1.5rem;
     .cabecalho {
         flex-direction: column; 
         padding: 1rem; 
+        width:100%;
     }
 
     .cabecalho-titulo {
@@ -405,13 +414,23 @@ font-size: 1.5rem;
         text-align: center; 
     }
 
+    .navegacao{
+        flex-direction: column;
+        gap:0.1rem;
+        
+    }
+    
     .navegacao-lista {
         gap: 0.5rem;
         flex-wrap: wrap; 
     }
 
     .navegacao-elemento a {
-        font-size: 0.9rem; 
+        font-size: 1rem; 
+    }
+
+    #contato{
+        font-size: 1rem;
     }
 
     .apresentacao {
@@ -510,6 +529,7 @@ font-size: 1.5rem;
         flex-direction: column; 
         align-items: center; 
         gap: 1rem; 
+        text-align: center;
     }
 
     .formacao-lista img {
