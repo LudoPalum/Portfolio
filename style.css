@@ -47,13 +47,6 @@ a {
     background-color: var(--cor-primaria);
 }
 
-.cabecalho-logo{
-    height: 1.7rem;
-    width: 1.7rem;
-    margin-left: 200px;
-    }
-
-
 .cabecalho-titulo {
     font-size: 1.4rem;
     position: absolute;
@@ -75,7 +68,7 @@ a {
     font-size: 1rem;
     color:rgb(255, 255, 255);
 }
-.contato{
+span{
     font-weight: bolder;
     color: var(--cor-terciaria);
 }
@@ -221,7 +214,7 @@ font-size: 1.5rem;
 
 
 /*------------------------------ Seção de Formação Acadêmica --------------------------------*/
-
+/*------------------------------ Seção de Projetos --------------------------------*/
 
 .formacao{
     display: flex;
@@ -398,42 +391,193 @@ font-size: 1.5rem;
 
 /* ------------------------------ Responsividade ---------------------------------------*/
 
-/* Tablets e telas maiores 
-@media (min-width: 768px) {
+/* Celulares*/ 
+@media (max-width: 768px) {
     .cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cabecalho-logo {
-        max-width: 100px;
+        flex-direction: column; 
+        padding: 1rem; 
     }
 
     .cabecalho-titulo {
-        font-size: 1.5rem;
+        font-size: 1.2rem; 
+        position: relative; 
+        left: 0; 
+        text-align: center; 
     }
 
     .navegacao-lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
+        gap: 0.5rem;
+        flex-wrap: wrap; 
     }
 
     .navegacao-elemento a {
-        font-size: 1rem;
+        font-size: 0.9rem; 
     }
+
+    .apresentacao {
+        flex-direction: column; 
+        margin-left: 0; 
+        margin-top: 2rem; 
+        align-items: center; 
+    }
+
+    .apresentacao-titulo {
+        font-size: 2.4rem; 
+        text-align: center; 
+    }
+
+    .apresentacao-subtitulo {
+        font-size: 1.2rem; 
+        text-align: center; 
+    }
+
+    .redes {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0.5rem; 
+    }
+
+    .redes-elemento a {
+        font-size: 1rem; 
+    }
+
+    .redes-elemento img {
+        width: 1rem; 
+        height: 1rem; 
+    }
+
+    .apresentacao-foto {
+        max-width: 100%; 
+        height: auto; 
+        max-height: none; 
+    }
+
+    .sobre-mim {
+        padding: 1rem; 
+    }
+
+    .sobre-mim-titulo {
+        margin-left: 0; 
+        text-align: center; 
+        font-size: 1.8rem; 
+    }
+
+    .sobre-mim-texto {
+        margin-left: 0; 
+        font-size: 1rem; 
+        max-width: 100%; 
+        padding: 0 1rem; 
+    }
+
+    .sobre-mim-assinatura {
+        margin-left: 0; 
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .habilidades {
+        padding: 2rem; 
+    }
+
+    .habilidades-lista {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .habilidades-lista img {
+        max-width: 6rem; 
+    }
+
+    .hobbies {
+        padding: 2rem; 
+    }
+
+    .hobbies-lista {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+    .hobbies-lista img {
+        max-width: 6rem; 
+    }
+
+    .formacao {
+        padding: 1.5rem; 
+    }
+
+    .formacao-lista {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+    .formacao-lista img {
+        max-width: 8rem; 
+    }
+
+    .projetos {
+        padding: 2rem; 
+    }
+
+    .projetos-conteiner-ingles {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .projetos-conteiner {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+    .exp-imagem {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .texto-botao-codigo {
+        width: 100%; 
+    }
+
+    .projetos-conteiner-codigo {
+        flex-direction: column; 
+    }
+
+    .ancoras {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+    .botao-projeto {
+        width: 100%; 
+    }
+
+    .contato {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: -4rem;
+    }
+
+    .contato-formulario {
+        margin-left: 0; 
+        width: 90%; 
+        padding: 1rem; 
+        margin-top: -5rem;
+    }
+
+    .telefone-imagem {
+        height: auto; 
+        width: 80%; 
+        max-width: 35rem; 
+        transform: rotate(90deg); 
+        transform-origin: center; 
+    }
+
+    .contato-botao {
+        width: 100%; 
+        margin-left: 0; 
+    }
+    
 }
 
-/* Telas grandes 
-@media (min-width: 1024px) {
-     Aqui você pode ajustar ainda mais o design para telas grandes 
-    .cabecalho-titulo {
-        font-size: 1.3rem;
-    }
-
-    .navegacao-elemento a {
-        font-size: 1.1rem;
-    }
-} */
