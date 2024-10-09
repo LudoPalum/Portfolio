@@ -414,7 +414,6 @@ font-size: 1.5rem;
     }
 
     .navegacao{
-        flex-direction: column;
         gap:0.1rem;
         
     }
@@ -425,11 +424,11 @@ font-size: 1.5rem;
     }
 
     .navegacao-elemento a {
-        font-size: 1rem; 
+        font-size: 0.9rem; 
     }
 
     #contato{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .apresentacao {
